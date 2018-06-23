@@ -5,5 +5,7 @@ import router from './components/router.vue'
 new Vue({
   el: '#app',
   router: router,
-  render: h => h(App)
+  render: function (createElement) {
+      return createElement(App);
+  }
 })
